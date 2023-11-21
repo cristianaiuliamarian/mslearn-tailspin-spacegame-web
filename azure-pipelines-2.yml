@@ -18,10 +18,10 @@ steps:
 # Set up a Node.js environment and add it to the PATH, additionally providing proxy support.
 - task: UseNode@1
   inputs:
-    #version: '10.x' # string. Version. Default: 10.x.
+    version: '10.x' # string. Version. Default: 10.x.
     #checkLatest: false # boolean. Check for Latest Version. Default: false.
     #force32bit: false # boolean. Use 32 bit version on x64 agents. Default: false.
-    
+
 - task: Npm@1
   displayName: 'Run npm install'
   inputs:
